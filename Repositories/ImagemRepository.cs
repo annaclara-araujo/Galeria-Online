@@ -9,10 +9,13 @@ namespace GaleriaOnline.WebApi.Repositories
     {
         private readonly GaleriaOnlineDbContext _context;
 
+        //metodo construtor que recebe o contexto do banco de dados
         public ImagemRepository(GaleriaOnlineDbContext context)
         {
             _context = context;
         }
+
+        //metodo para adicionar uma nova imagem ao banco de dados
         public async Task<Imagem?> CreateAsync(Imagem imagem)
         {
             _context.Imagens.Add(imagem);
@@ -20,6 +23,7 @@ namespace GaleriaOnline.WebApi.Repositories
             return imagem;
         }
 
+        //metodo para excluir uma imagem do banco de dados
         public async Task<bool> DeleteAsync(int id)
         {
             var imagem = await _context.Imagens.FindAsync(id);
@@ -31,16 +35,19 @@ namespace GaleriaOnline.WebApi.Repositories
             return await _context.SaveChangesAsync() > 0;
         }
 
+        //metodo para obter(listar) todas as imagens do banco de dados
         public async Task<IEnumerable<Imagem>> GetAllAsync()
         {
             return await _context.Imagens.ToListAsync();
         }
 
+        //metodo para obter uma imagem pelo id
         public async Task<Imagem?> GetByIdAsync(int id)
         {
             return await _context.Imagens.FindAsync(id);
         }
 
+        //metodo para atualizar uma imagem no banco de dados
         public async Task<bool> UpdateAsync(Imagem imagem)
         {
             _context.Imagens.Update(imagem);

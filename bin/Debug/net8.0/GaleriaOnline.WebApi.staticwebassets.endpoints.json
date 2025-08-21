@@ -1,5 +1,88 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "imagens/9624ff70-da37-475a-b415-51359c7dc64f.29piojmqm3.png",
+      "AssetFile": "imagens/9624ff70-da37-475a-b415-51359c7dc64f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1746524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qouBk3X/gm3bkdR+TVaSP/A3CR6Vh2jm4FJUSc0CNCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 19:44:20 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "29piojmqm3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qouBk3X/gm3bkdR+TVaSP/A3CR6Vh2jm4FJUSc0CNCc="
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/9624ff70-da37-475a-b415-51359c7dc64f.png"
+        }
+      ]
+    },
+    {
+      "Route": "imagens/9624ff70-da37-475a-b415-51359c7dc64f.png",
+      "AssetFile": "imagens/9624ff70-da37-475a-b415-51359c7dc64f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1746524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qouBk3X/gm3bkdR+TVaSP/A3CR6Vh2jm4FJUSc0CNCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 19:44:20 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qouBk3X/gm3bkdR+TVaSP/A3CR6Vh2jm4FJUSc0CNCc="
+        }
+      ]
+    }
+  ]
 }
