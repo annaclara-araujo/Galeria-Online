@@ -80,7 +80,7 @@ export const Galeria = () => {
                         }
                     })
 
-                    alert("Ebaaa deu certo!😁✨");
+                    alert("Ebaaa deu boom!😁✨");
                     listarCards();
                 } catch (error) {
                     alert("Não foi possível alterar o card!");
@@ -99,7 +99,7 @@ export const Galeria = () => {
     async function excluirCard(id) {
         try {
             await api.delete(`Imagem/${id}`)
-            alert("Excluidooo!")
+            alert("Excluido!")
         } catch (error) {
             alert("Erro ao excluir o card!")
             console.log(error);
